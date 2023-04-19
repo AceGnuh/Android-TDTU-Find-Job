@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="30dp"
+        android:background="#145da0"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Thông tin cá nhân"/>
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight="3"
+        android:scaleType="fitCenter"
+        android:src="@drawable/user3" />
+
+    <EditText
+        android:gravity="center"
+        android:id="@+id/edt_username"
+        android:layout_width="wrap_content"
+        android:layout_height= "0dp"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:hint="Nhập username"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:layout_weight="10"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tv_nameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="Họ tên: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/tv_nameTitle"
+            android:hint="Nhập họ tên"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv_birthDateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/tv_nameTitle"
+            android:text="Ngày sinh"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_birthDate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edt_name"
+            android:layout_toRightOf="@+id/tv_birthDateTitle"
+            android:hint="Nhập ngày sinh "
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv_genderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/tv_birthDateTitle"
+            android:text="Giới tính: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/genderOption_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_birthDateTitle"
+            android:layout_toRightOf="@+id/tv_genderTitle"
+            android:text="Nam"
+            android:textSize="18dp" />
+            <RadioButton
+                android:id="@+id/genderOption_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Nữ"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/genderOption_male"
+                android:layout_below="@+id/tv_birthDateTitle"/>
+        <TextView
+            android:id="@+id/tv_phoneTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/tv_genderTitle"
+            android:text="Số điện thoại: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_genderTitle"
+            android:layout_toRightOf="@+id/tv_phoneTitle"
+            android:hint="Nhập số điện thoại"
+            android:inputType="textEmailAddress"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_emailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/tv_phoneTitle"
+            android:text="Email liên hệ: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_phoneTitle"
+            android:layout_toRightOf="@+id/tv_emailTitle"
+            android:hint="Nhập email"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv_majorTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/tv_emailTitle"
+            android:text="Chuyên ngành: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edt_major"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/tv_majorTitle"
+            android:layout_below="@+id/tv_emailTitle"
+            android:textSize="18dp"
+            android:hint="Nhập chuyên ngành"/>
+        <TextView
+            android:id="@+id/tv_gpaTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/tv_majorTitle"
+            android:text="GPA tích lũy: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edt_gpa"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/tv_gpaTitle"
+            android:layout_below="@+id/tv_majorTitle"
+            android:textSize="18dp"
+            android:hint="Nhập điểm GPA"/>
+        <TextView
+            android:id="@+id/tv_skillsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/tv_gpaTitle"
+            android:text="Kỹ năng: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edit_skills"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/tv_skillsTitle"
+            android:layout_below="@+id/tv_gpaTitle"
+            android:textSize="18dp"
+            android:hint="Nhập kỹ năng/chứng chỉ"/>
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Lưu thông tin"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:background="#0dc5b9"
+        android:layout_gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<div th:fragment="header">
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+	        <div class="container-fluid">
+	            <a href="/homepage" class="text-decoration-none">
+                <span class="h1 text-uppercase text-primary bg-dark px-2"></span>
+                <span class="h1 text-uppercase text-white bg-dark px-2 ml-n1"><span style="color: #0dc5b9;">TDTU</span> JOB</span>
+            </a>
+	            <a class="nav-link" href="https://www.facebook.com/">
+	                <i class="bi bi-facebook"></i>
+	            </a>
+	            <a class="nav-link" href="https://www.instagram.com/">
+	                <i class="bi bi-instagram"></i>
+	            </a>
+	            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+	            <div class="collapse navbar-collapse" id="navbarScroll">
+	                <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+	                    <li class="nav-item">
+	                        <a class="nav-link text-light" href="#">
+	                            <i class="bi bi-person-circle"></i>
+	                        </a>
+	                    </li>
+	                    <li class="nav-item">
+	                        <a class="nav-link text-white " aria-current="page" href="/homepage">Welcome admin</a>
+	                    </li>
+	                    <li class="nav-item col-1 pe-2">
+                            <a href="admin/controller/logout.php" class="nav-link text-white btn btn-success">Log out</a>
+                        </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+
+</div>
+
